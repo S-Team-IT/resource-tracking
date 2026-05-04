@@ -8,7 +8,9 @@
     "fmt": "npx @biomejs/biome format ./frontend/src",
     "fmt-fix": "npx @biomejs/biome format --write ./frontend/src",
     "lint": "npx @biomejs/biome lint ./frontend/src",
-    "lint-fix": "npx @biomejs/biome lint --write --unsafe ./frontend/src"
+    "lint-fix": "npx @biomejs/biome lint --write --unsafe ./frontend/src",
+    "deploy": "wrangler deploy",
+    "preview": "wrangler dev"
   },
   "repository": {
     "type": "git",
@@ -23,6 +25,7 @@
   },
   "homepage": "https://github.com/S-Team-IT/resource-tracking#readme",
   "devDependencies": {
-    "@biomejs/biome": "^2.4.12"
+    "@biomejs/biome": "^2.4.12",
+    "wrangler": "^4.87.0"
   }
 }
